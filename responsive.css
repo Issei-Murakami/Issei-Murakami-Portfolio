@@ -1,6 +1,6 @@
 @media (max-width: 670px) {
   .menu-container {
-    width: 0%;
+    width: 100%;
     align-items: flex-start;
   }
   .introduction {
