@@ -45,7 +45,7 @@
     }
   }
   .subtitle-2 {
-    top: 17%;
+    top: 6%;
     left: 30%;
     h2 {
       font-size: 2rem;
@@ -82,7 +82,7 @@
     top: 5%;
   }
      .work-message {
-       
+      display:block;
       left: 20%;
     }
   .contact-nav {
