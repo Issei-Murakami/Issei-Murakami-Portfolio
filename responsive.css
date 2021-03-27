@@ -1,4 +1,7 @@
 @media (max-width: 670px) {
+  body{
+    max-width:670px
+  }
   .menu-container {
     width: 100%;
     align-items: flex-start;
