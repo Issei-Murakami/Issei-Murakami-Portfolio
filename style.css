@@ -395,8 +395,8 @@ li a:hover {
 .works .work-message {
   display: block;
   height: 90px;
-  position: absolute;
-  top: 80%;
+  position: relative;;
+  top: 30%;
   right: 30%;
   font-size: 2rem;
   letter-spacing: 1px;
