@@ -1,9 +1,6 @@
 @media (max-width: 670px) {
-  body{
-    max-width:670px
-  }
   .menu-container {
-    width: 100%;
+    width: 0%;
     align-items: flex-start;
   }
   .introduction {
@@ -12,62 +9,32 @@
     .name {
       font-size: 4rem;
       letter-spacing: 2px;
-      left: 5%;
     }
   }
-  #profile-section {
-    height: 1500px;
-  }
   .my-profile {
-    top: 0;
-    left: 1%;
     .profile-title {
       font-size: 1.8rem;
     }
   }
-  .profile-image {
-    position: relative;
-    left: 1%;
-    top: 15%;
-  }
-  .subtitle-1 {
-    top: 9.5%;
-    left: 30%;
-  }
   .introduction-1 {
-    top: 24%;
-    width: 100%;
-    left: 1%;
     p {
-      height: 300px;
-      font-size: 1.5rem;
+      font-size: 0.5rem;
       letter-spacing: 5px;
     }
   }
   .subtitle-2 {
-    top: 6%;
-    left: 30%;
     h2 {
       font-size: 2rem;
     }
   }
   .introduction-2 {
-    width: 100%;
-    top: 10.5%;
-    left: 1%;
     p {
-      font-size: 1.5rem;
+      font-size: 0.7rem;
       letter-spacing: 5px;
     }
   }
-  .skill {
-    display: block;
-  }
   #works-section {
-    height: 3600px;
-    .works-title {
-      top: 2%;
-    }
+    height: 2210px;
     .work {
       margin-top: 15px;
       .list {
@@ -78,47 +45,20 @@
 
   .works {
     flex-direction: column;
-    position: relative;
-    top: 5%;
-  }
-     .work-message {
-      display:block;
-      left: 20%;
-       top:90%;
-    }
-  .contact-nav {
-    left: 8%;
-    margin-bottom: 50px;
   }
   .copyright {
-    top: 40%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-top: 245px;
   }
 }
-@media (min-width: 820px) and(max-width: 1500px) {
-  .introduction {
-    height: 78vh;
-  }
+@media (min-width: 820px) and(max-width: 1700px) {
   .profile-image {
-    right: 20%;
     img {
       height: 500px;
       position: relative;
-      right: 45%;
     }
   }
-  .introduction-1 {
-    width: 520px;
-    right: 45%;
-  }
-  .introduction-2 {
-    width: 525px;
-    right: 70%;
-  }
-  #works-section {
-    height: 91vh;
-    .work-message {
-      right: 0%;
-    }
+  .copyright {
+    margin-top: 270px;
   }
 }
