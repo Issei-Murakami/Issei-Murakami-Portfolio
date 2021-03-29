@@ -1,4 +1,3 @@
-@charset "utf-8";
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +45,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  z-index: 9999;
+  z-index: 999;
   position: fixed;
 }
 
@@ -121,10 +120,10 @@ li a:hover {
 }
 
 .introduction {
-  background-image: url(./image/myphoto.jpeg);
+  background-image: url(../image/myphoto.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 150vh;
+  height: 1400px;
   position: sticky;
 }
 
@@ -132,9 +131,7 @@ li a:hover {
   color: white;
   font-size: 8rem;
   font-family: "Times New Roman", Times, serif;
-  position: absolute;
-  top: 50%;
-  left: 18%;
+  margin-top: 50px;
 }
 
 .main-container {
@@ -145,18 +142,10 @@ li a:hover {
 }
 
 #profile-section {
-  background-image: url(./image/introduction.jpg);
+  background-image: url(../image/introduction.jpg);
   background-size: cover;
   background-position: center;
-  height: 130vh;
   background-repeat: no-repeat;
-}
-
-#profile-section .my-profile {
-  top: 2%;
-  display: flex;
-  position: absolute;
-  left: 42%;
 }
 
 #profile-section .my-profile h2 {
@@ -168,9 +157,6 @@ li a:hover {
 }
 
 .profile-image {
-  position: absolute;
-  top: 4%;
-  left: 45%;
   opacity: 0;
   transition: 1s;
   transform: translateX(5%);
@@ -183,10 +169,7 @@ li a:hover {
 .subtitle-1 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 11%;
-  left: 50%;
+  margin-top: 20px;
 }
 
 .subtitle-1 h2 {
@@ -210,11 +193,9 @@ li a:hover {
 }
 
 .introduction-1 {
-  position: relative;
-  top: 50%;
-  left: 30%;
-  width: 52vw;
-  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
   background-color: whitesmoke;
   border-radius: 15px;
   opacity: 0;
@@ -225,10 +206,7 @@ li a:hover {
 .subtitle-2 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 17%;
-  left: 48%;
+  margin-top: 20px;
 }
 
 .subtitle-2 h2 {
@@ -236,10 +214,9 @@ li a:hover {
 }
 
 .introduction-2 {
-  position: absolute;
-  top: 18.5%;
-  left: 32%;
-  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
   background-color: whitesmoke;
   border-radius: 15px;
   opacity: 0;
@@ -248,7 +225,7 @@ li a:hover {
 }
 
 #skill-section {
-  background-image: url(./image/skill.jpg);
+  background-image: url(../image/skill.jpg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -324,7 +301,7 @@ li a:hover {
 }
 
 #portfolio-section {
-  background-image: url(./image/portfolio.jpg);
+  background-image: url(../image/portfolio.jpg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -334,9 +311,6 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 5%;
-  left: 1%;
 }
 
 #portfolio-section .portfolio-title h2 {
@@ -344,9 +318,9 @@ li a:hover {
 }
 
 #works-section {
-  background-image: url(./image/works.jpg);
+  background-image: url(../image/works.jpg);
   background-size: cover;
-  height: 120vh;
+  height: 850px;
   background-repeat: no-repeat;
 }
 
@@ -354,17 +328,22 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 5%;
-  left: 1%;
 }
 
 #works-section .works-title h2 {
   margin-left: 30px;
 }
 
+#works-section .work-message {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  transform: translateY(7px);
+  transition: 1s;
+  margin-top: 50px;
+}
+
 .works {
-  height: 90vh;
   display: flex;
   opacity: 0;
   transform: translateY(7%);
@@ -385,31 +364,17 @@ li a:hover {
 
 .works .work .work-text {
   width: 95%;
-  background-color: #632020;
+  background-color: #8d4646;
   color: azure;
   opacity: 0.9;
   border-radius: 20px;
   margin-top: 5%;
 }
 
-.works .work-message {
-  display: block;
-  height: 90px;
-  position: absolute;
-  top:80%;
-  right: 30%;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  color: whitesmoke;
-  transform: translateY(7px);
-  transition: 1s;
-}
-
 #contact-section {
-  background-image: url(./image/contact.jpeg);
+  background-image: url(../image/contact.jpeg);
   background-size: cover;
   background-position: 40% 50%;
-  height: 90vh;
   background-repeat: no-repeat;
 }
 
@@ -450,8 +415,6 @@ li a:hover {
 
 .copyright {
   font-size: 3.5rem;
-  position: relative;
-  top: 70%;
 }
 
 .move {
