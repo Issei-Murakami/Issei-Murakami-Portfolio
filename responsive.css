@@ -1,4 +1,7 @@
 @media (max-width: 670px) {
+  p{
+    font-size:0.8rem;
+  }
   .menu-container {
     width: 0%;
     align-items: flex-start;
