@@ -352,9 +352,7 @@ li a:hover {
 
 .works .work .list {
   width: 100%;
-  position: relative;
-  top: 10%;
-  color:aqua;
+  color:#ff4800;
 }
 
 .works .work img {
