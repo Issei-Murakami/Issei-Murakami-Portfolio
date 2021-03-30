@@ -6,11 +6,11 @@
   .introduction {
     height: 900px;
     background-size: 850px;
+  }
     .name {
       font-size: 4rem;
       letter-spacing: 2px;
     }
-  }
   .my-profile {
     .profile-title {
       font-size: 1.8rem;
@@ -32,6 +32,9 @@
       font-size: 0.7rem;
       letter-spacing: 5px;
     }
+  }
+  .revel-wrapper .revel{
+    margin-right:0;
   }
   #works-section {
     height: 2210px;
