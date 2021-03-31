@@ -10,7 +10,6 @@ html {
   align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 2800px;
   font-family: serif;
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
@@ -131,7 +130,9 @@ li a:hover {
   color: white;
   font-size: 8rem;
   font-family: "Times New Roman", Times, serif;
-  padding-top: 850px;
+ position: relative;
+    top: 50%;
+    right: 5%;
 }
 
 .main-container {
