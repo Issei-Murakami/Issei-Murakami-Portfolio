@@ -436,4 +436,7 @@ li a:hover {
   opacity: 1;
   transform: none;
 }
+#portfolio-section .portfolio .move{
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
