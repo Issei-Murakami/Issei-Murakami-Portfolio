@@ -318,7 +318,11 @@ li a:hover {
   margin-left: 1%;
 }
 #portfolio-section .portfolio {
+  opacity: 0;
   transition: 1s;
+}
+#portfolio-section .portfolio a {
+  display:block;
 }
 
 #portfolio-section .portfolio img {
