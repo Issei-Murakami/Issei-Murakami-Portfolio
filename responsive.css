@@ -7,7 +7,7 @@
     height: 900px;
     background-size: 850px;
   }
-    .name {
+   .introduction .name {
       font-size: 4rem;
       letter-spacing: 2px;
     }
