@@ -303,7 +303,7 @@ li a:hover {
 #portfolio-section {
   background-image: url(./image/portfolio.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 800px;
   background-repeat: no-repeat;
 }
 
@@ -315,6 +315,18 @@ li a:hover {
 
 #portfolio-section .portfolio-title h2 {
   margin-left: 1%;
+}
+#portfolio-section .portfolio {
+  opacity: 0;
+  transition: 1s;
+}
+
+#portfolio-section .portfolio img {
+  height: 440px;
+}
+
+#portfolio-section .portfolio-text p {
+  font-size: 2.5rem;
 }
 
 #works-section {
