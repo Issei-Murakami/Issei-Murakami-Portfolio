@@ -36,6 +36,9 @@
   .revel-wrapper .revel{
     margin-right:0;
   }
+  #portfolio-section .portfolio img {
+  width:100%;
+}
   #works-section {
     height: 2210px;
     .work {
