@@ -327,6 +327,7 @@ li a:hover {
 
 #portfolio-section .portfolio img {
   height: 440px;
+  width:50%;
 }
 
 #portfolio-section .portfolio-text p {
