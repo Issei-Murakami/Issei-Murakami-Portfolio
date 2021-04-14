@@ -4,67 +4,42 @@
     align-items: flex-start;
   }
   .introduction {
-    height: 900px;
+    height: 1000px;
     background-size: 850px;
   }
-   .introduction .name {
-      font-size: 4rem;
-      letter-spacing: 2px;
-    }
-  .my-profile {
-    .profile-title {
-      font-size: 1.8rem;
-    }
+  .introduction .name {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    padding-top: 400px;
+    padding-left: 50px;
   }
-  .introduction-1 {
-    p {
-      font-size: 0.5rem;
-      letter-spacing: 5px;
-    }
+  .my-profile .profile-title {
+    font-size: 1.8rem;
   }
-  .subtitle-2 {
-    h2 {
-      font-size: 2rem;
-    }
+  .introduction-1 p {
+    font-size: 0.5rem;
+    letter-spacing: 5px;
+    line-height: 20px;
   }
-  .introduction-2 {
-    p {
-      font-size: 0.7rem;
-      letter-spacing: 5px;
-    }
+  .subtitle-2 h2 {
+    font-size: 2rem;
   }
-  .revel-wrapper .revel{
-    margin-right:0;
+  .introduction-2 p {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+    line-height: 20px;
   }
-  #portfolio-section .portfolio img {
-  width:100%;
-}
   #works-section {
     height: 2210px;
-    .work {
-      margin-top: 15px;
-      .list {
-        color: brown;
-      }
-    }
   }
-
+  #works-section .work {
+    margin-top: 15px;
+  }
   .works {
     flex-direction: column;
   }
   .copyright {
     font-size: 1.3rem;
     margin-top: 245px;
-  }
-}
-@media (min-width: 820px) and(max-width: 1700px) {
-  .profile-image {
-    img {
-      height: 500px;
-      position: relative;
-    }
-  }
-  .copyright {
-    margin-top: 270px;
   }
 }
