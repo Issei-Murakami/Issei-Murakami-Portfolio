@@ -10,6 +10,7 @@ html {
   align-items: center;
   text-align: center;
   width: 100%;
+  max-width: 2800px;
   font-family: serif;
   font-size: 10px;
   -webkit-text-size-adjust: 100%;
@@ -28,24 +29,15 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-color: white;
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  top: 0;
-}
-
 .menu-container {
-  width: 100%;
   height: 60px;
   display: flex;
   cursor: pointer;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  z-index: 999;
   position: fixed;
+  right: 0;
 }
 
 .menu-container span {
@@ -54,33 +46,36 @@ header {
   width: 40px;
   margin: 5px 10px;
   border-radius: 2px;
-  background: black;
   transition: 300ms;
+  background: #000;
 }
 
-.top.open {
+.top.trans {
   transform: rotate(45deg);
   top: 15px;
   position: relative;
-  background-color: #fff;
+  background-color: #da2a56;
+  cursor: pointer;
 }
 
-.middle.open {
+.middle.trans {
   opacity: 0;
+  cursor: pointer;
 }
 
-.bottom.open {
+.bottom.trans {
   transform: rotate(-45deg);
   bottom: 15px;
   position: relative;
-  background-color: #fff;
+  background-color: #da2a56;
+  cursor: pointer;
 }
 
 .nav-wrapper {
   position: fixed;
   right: -100%;
   width: 100%;
-  background-color: rgba(31, 31, 32, 0.527);
+  background-color: rgba(53, 53, 53, 0.527);
   transition: 300ms;
   align-items: flex-end;
   z-index: 100;
@@ -119,41 +114,46 @@ li a:hover {
 }
 
 .introduction {
-  background-image: url(./image/myphoto.jpeg);
+  background-image: url(../images/myphoto.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 1400px;
-  position: sticky;
+  height: 1500px;
 }
 
 .introduction .name {
-  color: white;
   font-size: 8rem;
   font-family: "Times New Roman", Times, serif;
- position: relative;
-    top: 50%;
-    right: 5%;
+  color: #fff;
+  padding-top: 50%;
 }
 
-.main-container {
-  position: sticky;
-  top: 0;
+section {
   width: 100%;
-  height: 100%;
 }
 
 #profile-section {
-  background-image: url(./image/introduction.jpg);
+  background-image: url(../images/introduction.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#profile-section .my-profile h2 {
+#profile-section .profile-container {
+  width: 100%;
+  height: 1100px;
+}
+
+#profile-section .profile-container .my-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-section .profile-container .my-profile h2 {
   margin-left: 10px;
 }
 
-#profile-section .my-profile h2:hover {
+#profile-section .profile-container .my-profile h2:hover {
   color: blue;
 }
 
@@ -165,16 +165,6 @@ li a:hover {
 
 .profile-image img {
   border-radius: 5px;
-}
-
-.subtitle-1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.subtitle-1 h2 {
-  margin-left: 10px;
 }
 
 .size1 {
@@ -204,6 +194,12 @@ li a:hover {
   transform: translateX(-10%);
 }
 
+.subtitle-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .subtitle-2 {
   display: flex;
   justify-content: center;
@@ -226,7 +222,7 @@ li a:hover {
 }
 
 #skill-section {
-  background-image: url(./image/skill.jpg);
+  background-image: url(../images/skill.jpg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -236,9 +232,6 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 5%;
-  left: 5%;
 }
 
 .skill-title h2 {
@@ -268,8 +261,6 @@ li a:hover {
 
 .revel-wrapper {
   font-size: 3.5rem;
-  position: relative;
-  top: 22%;
   display: flex;
   opacity: 0;
   transform: translateX(7%);
@@ -278,13 +269,12 @@ li a:hover {
 
 .revel-wrapper .revel {
   width: 25%;
-  height: 8vh;
+  height: 50px;
   border: 2px solid #000;
   box-sizing: border-box;
   border-radius: 20px;
-  margin-right: 5px;
   color: white;
-  padding-top: 0.5%;
+  padding-top: 0.5;
 }
 
 .revel-wrapper .revel:hover {
@@ -292,17 +282,16 @@ li a:hover {
 }
 
 .inner {
-  background-color: black;
   height: 100%;
-  width: 0.0001vw;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 53px;
   transition: 1.5s;
+  border-left: false solid #fdf7f7;
   border-radius: 20px;
 }
 
 #portfolio-section {
-  background-image: url(./image/portfolio.jpg);
+  background-image: url(../images/portfolio.jpg);
   background-size: cover;
   height: 800px;
   background-repeat: no-repeat;
@@ -317,25 +306,14 @@ li a:hover {
 #portfolio-section .portfolio-title h2 {
   margin-left: 1%;
 }
-#portfolio-section .portfolio {
-  
-  transition: 1s;
-}
-#portfolio-section .portfolio a {
-  display:block;
-}
 
 #portfolio-section .portfolio img {
   height: 440px;
-  width:50%;
-}
-
-#portfolio-section .portfolio-text p {
-  font-size: 2.5rem;
+  width: 50%;
 }
 
 #works-section {
-  background-image: url(./image/works.jpg);
+  background-image: url(../images/works.jpg);
   background-size: cover;
   height: 850px;
   background-repeat: no-repeat;
@@ -357,7 +335,7 @@ li a:hover {
   color: whitesmoke;
   transform: translateY(7px);
   transition: 1s;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .works {
@@ -367,18 +345,17 @@ li a:hover {
   transition: 1s;
 }
 
-.works .work .list {
-  width: 100%;
-  color:#ff4800;
-}
-
-.works .work img {
+.works img {
   width: 65%;
   height: 35vh;
   border-radius: 45%;
 }
 
-.works .work .work-text {
+.works .list {
+  color: #ff4800;
+}
+
+.works .work-text {
   width: 95%;
   background-color: #8d4646;
   color: azure;
@@ -388,7 +365,7 @@ li a:hover {
 }
 
 #contact-section {
-  background-image: url(./image/contact.jpeg);
+  background-image: url(../images/contact.jpeg);
   background-size: cover;
   background-position: 40% 50%;
   background-repeat: no-repeat;
@@ -398,9 +375,6 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 5%;
-  left: 1%;
 }
 
 #contact-section .contact-title h2 {
@@ -413,18 +387,13 @@ li a:hover {
   top: 15%;
 }
 
-#contact-section .contact-nav {
-  position: relative;
-  top: 20%;
-}
-
-#contact-section .contact-nav ul {
+.contact-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#contact-section .contact-nav ul li {
+.contact-nav ul li {
   display: inline-block;
   margin-right: 70px;
 }
@@ -436,8 +405,5 @@ li a:hover {
 .move {
   opacity: 1;
   transform: none;
-}
-#portfolio-section .portfolio .move{
-  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
