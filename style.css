@@ -114,7 +114,7 @@ li a:hover {
 }
 
 .introduction {
-  background-image: url(../images/myphoto.jpeg);
+  background-image: url(./images/myphoto.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   height: 1500px;
@@ -132,7 +132,7 @@ section {
 }
 
 #profile-section {
-  background-image: url(../images/introduction.jpg);
+  background-image: url(./images/introduction.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,7 +222,7 @@ section {
 }
 
 #skill-section {
-  background-image: url(../images/skill.jpg);
+  background-image: url(./images/skill.jpg);
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ section {
 }
 
 #portfolio-section {
-  background-image: url(../images/portfolio.jpg);
+  background-image: url(./images/portfolio.jpg);
   background-size: cover;
   height: 800px;
   background-repeat: no-repeat;
@@ -313,7 +313,7 @@ section {
 }
 
 #works-section {
-  background-image: url(../images/works.jpg);
+  background-image: url(./images/works.jpg);
   background-size: cover;
   height: 850px;
   background-repeat: no-repeat;
@@ -365,7 +365,7 @@ section {
 }
 
 #contact-section {
-  background-image: url(../images/contact.jpeg);
+  background-image: url(./images/contact.jpeg);
   background-size: cover;
   background-position: 40% 50%;
   background-repeat: no-repeat;
