@@ -1,19 +1,20 @@
 $(function () {
   //ハンバーガー
-  $(".menu-container span").click(function () {
+  $(".menu-container").click(function () {
     $(".nav-wrapper").toggleClass("open");
-    $("span").toggleClass("open");
-    $(".nav-wrapper").click(function () {
-      $(".nav-wrapper").removeClass("open");
-    });
+    $("span").toggleClass("trans");
   });
-
+  $(".nav-wrapper").click(function () {
+    $(".nav-wrapper").removeClass("open");
+    $("span").removeClass("trans");
+  });
+  
   //innerメソッド
   $(".revel").on({
     mouseover: function () {
       $(".inner", this).css({
         backgroundColor: "red",
-        opacity: 0.7,
+        opacity: 0.6,
         width: "23vw",
       });
     },
